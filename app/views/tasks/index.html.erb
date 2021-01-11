@@ -1,0 +1,7 @@
+<ul>
+  <% Task.all.each do |task| %>
+  <li style="font-family: sans-serif;"><%= link_to "#{task.title}", "tasks/#{task.id}" %>
+  <%= task.completed %></li>
+<% end %>
+</ul>
+
